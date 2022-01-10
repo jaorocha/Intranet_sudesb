@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <meta http-equiv="refresh" content="15"> -->
   <title>Ramais Sudesb</title>
   <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/features/">
   <link rel="shortcut icon" href="./assets/marca.ico" type="image/x-icon">
@@ -51,7 +52,13 @@
 
   <div class="p-lg-1 mt-5">
     <div class="container pt-5">
-      <h1 class="display-5 fw-bold">Confira a lista dos ramais telefônicos:</h1>
+      <div class="row d-flex align-items-center">
+        <h1 class="col-9 display-5 fw-bold">Confira a lista dos ramais telefônicos:</h1>
+        <div class="col-3 form">
+          <!-- <label for="searchbar" class="form-label">Pesquise</label> -->
+          <input type="search" name="search" id="searchbar" onkeyup="search_ramal()" class="form-control" placeholder="Busque aqui...">
+        </div>
+      </div>
       <hr>
       <div class="table-responsive shadow-lg">
         <table class="table table-borderless table-hover table-striped">
@@ -63,202 +70,202 @@
             </tr>
           </thead>
           <tbody>
-            <tr class="table-primary text-center fw-bold" scope="row">
+            <tr class="table-primary text-center fw-bold ramais" scope="row">
               <td>Recepção</td>
               <td>69222</td>
               <td>Marlene</td>
             </tr>
-            <tr class="table-secondary text-center fw-bold" scope="row">
+            <tr class="table-secondary text-center fw-bold ramais" scope="row">
               <td>Protocolo</td>
               <td>69119</td>
               <td>Neuzimari / Geovana</td>
             </tr>
-            <tr class="table-danger text-center fw-bold" scope="row">
+            <tr class="table-danger text-center fw-bold ramais" scope="row">
               <td>Diger</td>
               <td>69182</td>
               <td>Sumaia / Patrícia / Fabiana</td>
             </tr>
-            <tr class="table-danger text-center fw-bold" scope="row">
+            <tr class="table-danger text-center fw-bold ramais" scope="row">
               <td>Diger</td>
               <td>69174</td>
               <td>Lucas</td>
             </tr>
-            <tr class="table-warning text-center fw-bold" scope="row">
+            <tr class="table-warning text-center fw-bold ramais" scope="row">
               <td>Chefia de Gabinete</td>
               <td>69124</td>
               <td>Clécia</td>
             </tr>
-            <tr class="table-warning text-center fw-bold" scope="row">
+            <tr class="table-warning text-center fw-bold ramais" scope="row">
               <td>Chefia de Gabinete</td>
               <td>69178</td>
               <td>Diogo Rios</td>
             </tr>
-            <tr class="table-success text-center fw-bold" scope="row">
+            <tr class="table-success text-center fw-bold ramais" scope="row">
               <td>Expediente</td>
               <td>69191</td>
               <td>Bernadete / Gabriela</td>
             </tr>
-            <tr class="table-success text-center fw-bold" scope="row">
+            <tr class="table-success text-center fw-bold ramais" scope="row">
               <td>Expediente</td>
               <td>69239</td>
               <td>Verônica</td>
             </tr>
-            <tr class="table-info text-center fw-bold" scope="row">
+            <tr class="table-info text-center fw-bold ramais" scope="row">
               <td>Astec</td>
               <td>69236 / 69235</td>
               <td>Mariza / Jéssica / Victor</td>
             </tr>
-            <tr class="table-info text-center fw-bold" scope="row">
+            <tr class="table-info text-center fw-bold ramais" scope="row">
               <td>Astec</td>
               <td>69234</td>
               <td>Nájila</td>
             </tr>
-            <tr class="table-light text-center fw-bold" scope="row">
+            <tr class="table-light text-center fw-bold ramais" scope="row">
               <td>Ascom</td>
               <td>69116</td>
               <td>Hilda / Marcos / Dayse / Jéssica</td>
             </tr>
-            <tr class="table-primary text-center fw-bold" scope="row">
+            <tr class="table-primary text-center fw-bold ramais" scope="row">
               <td>Doee</td>
               <td>69219</td>
               <td>Renata / Fátima</td>
             </tr>
-            <tr class="table-primary text-center fw-bold" scope="row">
+            <tr class="table-primary text-center fw-bold ramais" scope="row">
               <td>Doee</td>
               <td>69243</td>
               <td>Joice / Rosa</td>
             </tr>
-            <tr class="table-secondary text-center fw-bold" scope="row">
+            <tr class="table-secondary text-center fw-bold ramais" scope="row">
               <td>Cob</td>
               <td>69220</td>
               <td>Luiz Brantes</td>
             </tr>
-            <tr class="table-secondary text-center fw-bold" scope="row">
+            <tr class="table-secondary text-center fw-bold ramais" scope="row">
               <td>Cob</td>
               <td>69223</td>
               <td>Engenharia</td>
             </tr>
-            <tr class="table-danger text-center fw-bold" scope="row">
+            <tr class="table-danger text-center fw-bold ramais" scope="row">
               <td>Estádio-CEE1</td>
               <td>69144</td>
               <td>Hélio / Júnior</td>
             </tr>
-            <tr class="table-danger text-center fw-bold" scope="row">
+            <tr class="table-danger text-center fw-bold ramais" scope="row">
               <td>Estádio-Manutenção</td>
               <td>69143</td>
               <td>Manutenção</td>
             </tr>
-            <tr class="table-warning text-center fw-bold" scope="row">
+            <tr class="table-warning text-center fw-bold ramais" scope="row">
               <td>Transporte</td>
               <td>69169</td>
               <td>Sílvio / Paulo</td>
             </tr>
-            <tr class="table-success text-center fw-bold" scope="row">
+            <tr class="table-success text-center fw-bold ramais" scope="row">
               <td>Projur</td>
               <td>69113</td>
               <td>Roberto</td>
             </tr>
-            <tr class="table-success text-center fw-bold" scope="row">
+            <tr class="table-success text-center fw-bold ramais" scope="row">
               <td>Projur</td>
               <td>69112</td>
               <td>Dra. Zuleik / Dra. Elisabete</td>
             </tr>
-            <tr class="table-success text-center fw-bold" scope="row">
+            <tr class="table-success text-center fw-bold ramais" scope="row">
               <td>Projur</td>
               <td>69185</td>
               <td>Advogados</td>
             </tr>
-            <tr class="table-info text-center fw-bold" scope="row">
+            <tr class="table-info text-center fw-bold ramais" scope="row">
               <td>CCTL</td>
               <td>69226</td>
               <td>Ivanildes / Larissa / Rosa</td>
             </tr>
-            <tr class="table-light text-center fw-bold" scope="row">
+            <tr class="table-light text-center fw-bold ramais" scope="row">
               <td>Ceep - Excelência</td>
               <td>69122</td>
               <td>Fernando / Thais / Antônia</td>
             </tr>
-            <tr class="table-primary text-center fw-bold" scope="row">
+            <tr class="table-primary text-center fw-bold ramais" scope="row">
               <td>Daf</td>
               <td>69231</td>
               <td>Kátia</td>
             </tr>
-            <tr class="table-secondary text-center fw-bold" scope="row">
+            <tr class="table-secondary text-center fw-bold ramais" scope="row">
               <td>Cad</td>
               <td>69237</td>
               <td>Duclisse / Patrícia / Edneide</td>
             </tr>
-            <tr class="table-danger text-center fw-bold" scope="row">
+            <tr class="table-danger text-center fw-bold ramais" scope="row">
               <td>Crh</td>
               <td>69228</td>
               <td>Joice / Normeuza</td>
             </tr>
-            <tr class="table-warning text-center fw-bold" scope="row">
+            <tr class="table-warning text-center fw-bold ramais" scope="row">
               <td>Comap</td>
               <td>69145</td>
               <td>Morgana / Melchiades</td>
             </tr>
-            <tr class="table-warning text-center fw-bold" scope="row">
+            <tr class="table-warning text-center fw-bold ramais" scope="row">
               <td>Almoxarifado</td>
               <td>69225</td>
               <td>Jorge / Gileno</td>
             </tr>
-            <tr class="table-success text-center fw-bold" scope="row">
+            <tr class="table-success text-center fw-bold ramais" scope="row">
               <td>Cfin</td>
               <td>69115</td>
               <td>Alberto / Jorge / Carlinhos / Nice</td>
             </tr>
-            <tr class="table-info text-center fw-bold" scope="row">
+            <tr class="table-info text-center fw-bold ramais" scope="row">
               <td>Copel</td>
               <td>69114</td>
               <td>Osvan / Sueli</td>
             </tr>
-            <tr class="table-light text-center fw-bold" scope="row">
+            <tr class="table-light text-center fw-bold ramais" scope="row">
               <td>Coseg</td>
               <td>69238</td>
               <td>Liz</td>
             </tr>
-            <tr class="table-light text-center fw-bold" scope="row">
+            <tr class="table-light text-center fw-bold ramais" scope="row">
               <td>Coseg</td>
               <td>69170</td>
               <td>Paulo / Cláudia</td>
             </tr>
-            <tr class="table-primary text-center fw-bold" scope="row">
+            <tr class="table-primary text-center fw-bold ramais" scope="row">
               <td>Dfe</td>
               <td>69101</td>
               <td>Wilton / Janice</td>
             </tr>
-            <tr class="table-secondary text-center fw-bold" scope="row">
+            <tr class="table-secondary text-center fw-bold ramais" scope="row">
               <td>Cape</td>
               <td>69107</td>
               <td>Ilka</td>
             </tr>
-            <tr class="table-danger text-center fw-bold" scope="row">
+            <tr class="table-danger text-center fw-bold ramais" scope="row">
               <td>Cerel</td>
               <td>69177</td>
               <td>Gisele</td>
             </tr>
-            <tr class="table-warning text-center fw-bold" scope="row">
+            <tr class="table-warning text-center fw-bold ramais" scope="row">
               <td>Informática</td>
               <td>69220</td>
               <td>João / Adriano</td>
             </tr>
-            <tr class="table-success text-center fw-bold" scope="row">
+            <tr class="table-success text-center fw-bold ramais" scope="row">
               <td>Copa</td>
               <td>69190</td>
               <td>Heloisa / Domingas</td>
             </tr>
-            <tr class="table-success text-center fw-bold" scope="row">
+            <tr class="table-success text-center fw-bold ramais" scope="row">
               <td>Copa</td>
               <td>69171</td>
               <td>Val - Cantina 2</td>
             </tr>
-            <tr class="table-info text-center fw-bold" scope="row">
+            <tr class="table-info text-center fw-bold ramais" scope="row">
               <td>Limpeza</td>
               <td>69108</td>
               <td>Milena</td>
             </tr>
-            <tr class="table-light text-center fw-bold" scope="row">
+            <tr class="table-light text-center fw-bold ramais" scope="row">
               <td>Guarita</td>
               <td>69111</td>
               <td>Seguranças</td>
@@ -282,6 +289,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
   </script>
+  <script src="./js/search.js"></script>
 </body>
 
 </html>
