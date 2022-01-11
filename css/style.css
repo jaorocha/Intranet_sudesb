@@ -1,10 +1,6 @@
 .localz{
     position: fixed !important;
-<<<<<<< HEAD
     left: 1vw;
-=======
-    left: 80px;
->>>>>>> f7e328a0726da352438e1d38b505e4161f12cdc8
     bottom: 20px;
     /* background-color: red !important; */
 }
